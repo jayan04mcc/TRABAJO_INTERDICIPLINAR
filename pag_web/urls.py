@@ -8,5 +8,6 @@ urlpatterns =[
     path('puntaje/',views.resultados),
     path('', views.registro_view, name='registro' ),
     path('index1/',views.view_index1, name='red_index1'),
-    path('indexprueba/',views.indexprueba)
+    path('indexprueba/',views.indexprueba),
+    path('index_nuevo/',views.view_indexnuevo, name='ruta_indexnuevo')
 ]

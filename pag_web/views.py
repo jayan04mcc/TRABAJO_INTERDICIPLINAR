@@ -6,6 +6,9 @@ from .form import RegistroForm
 def index(request):
     return render(request, 'pag_web/index.html')
 
+##ruta nueva
+def view_indexnuevo(request):
+    return render(request, 'pantallas_vista/index_nuevo.html')
 def indexprueba(request):
     return render(request, 'pantallas_vista/indexprueba.html')
 
@@ -21,7 +24,7 @@ def registro_view(request):
         if form.is_valid():
             print("Valido")
             form.save()
-            return redirect('red_index1')
+            return redirect('ruta_indexnuevo')
         else:
             print("Formulario no válido")
             print(form.errors)

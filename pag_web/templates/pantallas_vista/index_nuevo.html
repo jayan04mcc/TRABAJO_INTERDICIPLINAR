@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Interactive South America Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <!-- Asegúrate de que este archivo CSS contenga los estilos que acabamos de definir -->
+    <link rel="stylesheet" href="{% static 'pag_web/css/estilo_nuevo.css'%}" type="text/css">
+</head>
+<body>
+<div class="contenedor">    
+    <div id="map"></div>
+    <div class="informacion">
+        <h1>Cambio Climático exposicion</h1> <!-- Cambia Title por h1 para el título -->
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam optio voluptatum porro voluptatibus et! Animi, sapiente. Animi non velit odio iste tenetur, sed ipsam atque delectus officia accusantium veritatis! Perferendis.</p>
+    </div>
+</div>
+
+<!-- Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<!-- Your Custom JavaScript File -->
+<script src="{% static 'pag_web/js/script_nuevo.js'%}"></script>
+
+</body>
+</html>
