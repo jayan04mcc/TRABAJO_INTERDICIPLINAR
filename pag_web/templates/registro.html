@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Pagina Web</title>
+    <link rel="stylesheet" href="{% static 'pag_web/css/style.css'%}" type="text/css">
+    <script src="{% static 'pag_web/js/script.js'%}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="register-form">
+            <h2>Registro</h2>
+            <form method="post" action="{% url 'registro' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
